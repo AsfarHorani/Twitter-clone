@@ -1,0 +1,75 @@
+.feed{
+  flex-basis: 1;
+  flex-grow: 2;
+  flex-shrink: 1;
+  -webkit-box-flex: 2;
+   border-right: 1px solid var(    --twitter-background);
+   border-left: 1px solid var(    --twitter-background);
+  max-width: 600px;
+  min-width:min-content;
+  overflow-y: visible;
+
+}
+
+.feed-header > .awIcon,
+.feed-header > .avatar{
+  display: none;
+}
+.feed-header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  margin-bottom: auto;
+  background-color: white;
+  z-index: 100;
+  border: 1px solid var(--twitter-background);
+  padding: 15px 20px;
+}
+
+.feed::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.feed {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+
+
+
+
+@media only screen and (max-width: 1000px) {
+  .feed{
+     max-width: 100%;
+ } 
+}
+
+@media only screen and (max-width: 500px) {
+
+
+ .feed-header{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 15px 10px;
+ }
+ .feed-header h2{
+   flex: 0.8;
+   padding-left: 10px;
+ }
+
+ .feed-header > .awIcon,
+.feed-header > .avatar{
+  display: block;
+}
+ 
+}
+
+@media only screen and (max-width: 500px) {
+  .tweet-box{
+      display: none;
+
+  }
+   
+ }

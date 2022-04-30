@@ -1,0 +1,21 @@
+
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px ;
+    position: -webkit-sticky;
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    z-index: 200;
+    width: -webkit-fill-available;
+    width: -moz-available;
+  } 
+
+  @media only screen and (min-width: 500px) {
+  .footer{
+    display: none;
+     
+  } 
+}

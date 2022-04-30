@@ -1,0 +1,5 @@
+.ComposeTweet{
+  margin:100px auto;
+   border: 2px solid var(--twitter-background);
+   height: fit-content;
+}
